@@ -1,0 +1,102 @@
+/* Base page styling */
+body {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f5f0e6; /* soft beige */
+  color: #4a3f35;           /* warm dark brown */
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: #8b6b5a; /* muted terracotta */
+  letter-spacing: -0.5px;
+}
+
+/* Input and button */
+input[type="text"] {
+  width: 70%;
+  max-width: 360px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #c9b8a8; /* soft sand */
+  border-radius: 12px;
+  outline: none;
+  background-color: #fdfaf7; /* very light cream */
+  color: #4a3f35;
+  margin-right: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"]:focus {
+  border-color: #a98c72; /* warmer brown on focus */
+  box-shadow: 0 2px 8px rgba(169, 140, 114, 0.15);
+}
+
+button {
+  padding: 0.8rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #a98c72; /* main button color */
+  color: #fdfaf7;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #957966;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(169, 140, 114, 0.25);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* List and task items */
+ul {
+  list-style: none;
+  margin: 2rem auto 0;
+  padding: 0;
+  max-width: 600px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 0.7rem;
+  border-radius: 12px;
+  background-color: #fdfaf7;
+  border: 1px solid #e4d6c7;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  color: #4a3f35;
+}
+
+li button.delete {
+  background-color: #c9b8a8; /* soft sand */
+  color: #4a3f35;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+li button.delete:hover {
+  background-color: #b8a290; /* darker sand */
+}
